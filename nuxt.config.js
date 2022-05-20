@@ -49,8 +49,14 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://rickandmortyapi.com/graphql',
-      }
+        httpEndpoint: 'https://trusted-hippo-44.hasura.app/v1/graphql',
+        httpLinkOptions: {
+          headers: {
+             'x-hasura-admin-secret': 'lGOT5qIAsO8V0rvdh1grRSvz4wBF5O9xQgZuwPjOQu0YF7EUsPvXODpfGNagV1dT',
+          }
+        }
+      },
+      
     }
   },
 
